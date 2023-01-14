@@ -1,5 +1,17 @@
 # Automated Weed Detection and Removal in Agricultural Fields
 
+The project is based on the Intel® oneAPI Hackathon for Open Innovation Hackathon 
+
+## Computer Vision Challenge Track: Target and Eliminate
+
+### Problem:
+
+Weeds to increase crop yields Weeds are an unwanted intruder in the agricultural business. They steal nutrients, water, land, and other critical resources to grow healthy crops. These intruders can lead to lower yields and inefficient deployment of resources by farmers. One known approach is to use pesticides to remove weeds, but aggressive pesticides create health risks for humans. Computer vision technology can automatically detect the presence of weeds and use targeted remediation techniques to remove them from fields with minimal environmental impact.
+
+### Expected Solution:
+
+In this hackathon track, you will be tasked with training and deploying a model into a simulated production environment - where your binary-classification accuracy (F1 score) and inference time will be used to rank you against other teams competing for this track's top spot.
+
 ## Objective
 
 The objective of this project is to develop a computer vision model that can accurately detect and remove weeds in agricultural fields with minimal environmental impact. The proposed approach uses a Residual Network (ResNet) architecture with Auto Mixed Precision (AMP) to classify images of crops and weeds. The use of AMP allows for dynamic adjustment of the precision of computations during training and inference, which can improve the performance of the model. The use of oneAPI Analytical Toolkit will enhance the performance and efficiency of the model, leading to improved crop yields and more efficient use of resources.
@@ -19,23 +31,25 @@ The implementation of this project will involve the following steps:
 
 ## Requirements
 
-• TensorFlow or PyTorch deep learning framework
+    • TensorFlow or PyTorch deep learning framework in Anaconda IDE
 
-• oneAPI toolkit
+    • oneAPI Analyticals toolkit
 
-• OpenCV
+    • OpenCV
 
-• Python
+    • Python >= 3.7
 
-• NumPy
+    • NumPy
 
-• Pandas
+    • Pandas
 
-• Matplotlib
+    • Matplotlib
+
+
 
 
 ## Installation
-1.	Install the deep learning framework by following the instructions on the official website (TensorFlow or PyTorch)
+1.	Install the deep learning framework by following the instructions on the official website ([TensorFlow](https://www.intel.com/content/www/us/en/developer/articles/guide/optimization-for-tensorflow-installation-guide.html) or [PyTorch](https://www.intel.com/content/www/us/en/developer/articles/guide/getting-started-with-intel-optimization-of-pytorch.html))
 2.	Install oneAPI toolkit by following the instructions on the official website
 3.	Install OpenCV and other required python libraries using pip:
 
@@ -57,6 +71,6 @@ git clone https://github.com/Nitin-Mane/Automated-Weed-Detection.git
 8.	Monitor the model's performance using oneAPI Performance Profiler
 
 
-License
+# License
 
 This project is licensed under the MIT License - see the LICENSE file for details.

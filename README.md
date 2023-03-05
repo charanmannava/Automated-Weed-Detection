@@ -1,6 +1,9 @@
 # Automated Weed Detection and Removal in Agricultural Fields
+[![Python Version](https://img.shields.io/badge/Python-3.8-blue.svg)](https://www.python.org/downloads/release/python-380/)
+[![Tools Used](https://img.shields.io/badge/Tools-Anaconda-red.svg)](https://www.anaconda.com/)
+[![OneAPI](https://img.shields.io/badge/OneAPI-Beta-green.svg)](https://software.intel.com/en-us/oneapi)
 
-The project is based on the Intel® oneAPI Hackathon for Open Innovation Hackathon 
+![Image of Project](./media/project_theme.png) 
 
 ## Computer Vision Challenge Track: Target and Eliminate
 
@@ -49,7 +52,7 @@ The implementation of this project will involve the following steps:
 
 
 ## Installation
-1.	Install the deep learning framework by following the instructions on the official website ([TensorFlow](https://www.intel.com/content/www/us/en/developer/articles/guide/optimization-for-tensorflow-installation-guide.html) or [PyTorch](https://www.intel.com/content/www/us/en/developer/articles/guide/getting-started-with-intel-optimization-of-pytorch.html))
+1.	Install the deep learning framework by following the instructions on the official website ([TensorFlow](https://www.intel.com/content/www/us/en/developer/articles/guide/optimization-for-tensorflow-installation-guide.html))
 2.	Install oneAPI toolkit by following the instructions on the official website
 3.	Install OpenCV and other required python libraries using pip:
 
@@ -60,14 +63,25 @@ The implementation of this project will involve the following steps:
 
 ## Usage
 1.	Clone the repository:
-Copy code
+```
 git clone https://github.com/Nitin-Mane/Automated-Weed-Detection.git 
+```
 2.	Download the dataset and place it in the project folder.
+```
+!wget <Dataset link>
+```
 3.	Use the oneAPI DAL to preprocess the dataset
+```
+Initialize - C:/Program Files (x86)/Intel/oneAPI/setvars.bat | Visual Studio 2022 Community
+```
 4.	Train the model using the deep learning framework with AMP and oneAPI DNNL
+
 5.	Optimize the model's performance using oneAPI MKL and GAL
+
 6.	Analyze the model's performance using oneAPI MAD
+
 7.	Deploy the model to the simulated production environment using oneAPI Deployment Manager
+
 8.	Monitor the model's performance using oneAPI Performance Profiler
 
 

@@ -63,20 +63,60 @@ The implementation of this project will involve the following steps:
     pip install opencv-python pip install numpy pip install pandas pip install matplotlib 
     ```
 
+# Installation in the WSL2 Ubuntu 22.04 
+
+## Installation of Intel Graphics Package Repository
+To install the repositories.intel.com/graphics package repository, you can follow these steps:
+
+1. Open your WSL 2 console.
+2. Execute the following command to install the necessary dependencies:
+```
+sudo apt-get install -y gpg-agent wget
+
+```
+3. Execute the following command to download and install the GPG key:
+```
+wget -qO - https://repositories.intel.com/graphics/intel-graphics.key | sudo gpg --dearmor --output /usr/share/keyrings/intel-graphics.gpg
+
+```
+4. Execute the following command to add the repository to your system:
+```
+echo 'deb [arch=amd64,i386 signed-by=/usr/share/keyrings/intel-graphics.gpg] https://repositories.intel.com/graphics/ubuntu jammy arc' | sudo tee  /etc/apt/sources.list.d/intel.gpu.jammy.list
+
+```
+Follow the [link](https://www.intel.com/content/www/us/en/docs/oneapi/installation-guide-linux/2023-0/configure-wsl-2-for-gpu-workflows.html) for the installation instructions. 
+
+## Enabling Intel Extension for TensorFlow
+
+Setup environment variables
+```
+source /opt/intel/oneapi/setvars.sh
+```
+
+Install the latest Tensorflow and Intel Extension 
+
+```
+pip install tensorflow==2.10.0
+pip install --upgrade intel-extension-for-tensorflow[gpu]
+```
+
 ## Usage
 
 1.	Clone the repository:
-    ```
+```
     git clone https://github.com/Nitin-Mane/Automated-Weed-Detection.git 
-    ```
+```
 2.	Download the dataset and place it in the project folder.
-    ```
+```
     !wget <Dataset link>
-    ```
+```
+follow the [Baseline](./02_Baseline.ipynb) notebook file for the download and data processing method.
+
 3.	Use the oneAPI DAL to preprocess the dataset
-    ```
+```
     Initialize - C:/Program Files (x86)/Intel/oneAPI/setvars.bat | Visual Studio 2022 Community
-    ```
+```
+
 4.	Train the model using the deep learning framework with AMP and oneAPI DNNL. The model trained are available in the following [link](https://mega.nz/folder/FoElCQAb#zCNPsFu6HRTrMF90ekF71g)
 
 5.	Optimize the model's performance using oneAPI MKL and GAL

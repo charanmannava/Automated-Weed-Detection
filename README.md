@@ -77,7 +77,7 @@ The implementation of this project will involve the following steps:
     ```
     Initialize - C:/Program Files (x86)/Intel/oneAPI/setvars.bat | Visual Studio 2022 Community
     ```
-4.	Train the model using the deep learning framework with AMP and oneAPI DNNL
+4.	Train the model using the deep learning framework with AMP and oneAPI DNNL. The model trained are available in the following [link](https://mega.nz/folder/FoElCQAb#zCNPsFu6HRTrMF90ekF71g)
 
 5.	Optimize the model's performance using oneAPI MKL and GAL
 

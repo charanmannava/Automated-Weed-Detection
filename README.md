@@ -38,7 +38,7 @@ The implementation of this project will involve the following steps:
 
 ## Requirements
 
-    • TensorFlow or PyTorch deep learning framework in Anaconda IDE
+    • Intel TensorFlow 2.9 - 2.11 
 
     • oneAPI Analyticals toolkit
 

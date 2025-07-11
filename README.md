@@ -7,8 +7,6 @@
 [![Scikit Learn](https://img.shields.io/badge/Scikit%20Learn-0.23-orange.svg)](https://scikit-learn.org/stable/install.html)
 [![OneDAL](https://img.shields.io/badge/OneDAL-1.1-lightgrey.svg)](https://software.intel.com/en-us/oneapi-onedal-library)
 
-![Image of Project](./media/project_theme.png) 
-
 ## Computer Vision Challenge Track: Target and Eliminate
 
 ### Problem:
@@ -131,3 +129,7 @@ follow the [Baseline](./02_Baseline.ipynb) notebook file for the download and da
 # License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+# team members 
+Mannava Sainadh Charan - 2200050031
+Narra Pujitha - 2200050030
